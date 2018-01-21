@@ -1,0 +1,126 @@
+.location-select {
+  width: 100%;
+  border: 1px solid #333;
+  background-color: white;
+  -webkit-appearance: unset;
+  white-space: normal;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.radio-group {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  width: calc(100% - 2px);
+  border: 1px solid #333;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.radio-group input[type="radio"] {
+  display: none;
+}
+
+.radio-group label {
+  grid-column: span 1;
+  padding: 5px;
+}
+
+.selected-radio {
+  background-color: lightskyblue;
+}
+
+.form-label {
+  display: block;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.sorter-container {
+  padding: 0 5px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.result-description {
+  font-size: 12px;
+  font-style: italic;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.result-route {
+  display: grid;
+  grid-template-columns: 6;
+  grid-template-rows: 2;
+  background-color: #eee;
+  border-radius: 3px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.result-route__title {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  margin: 0 0 10px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.result-route__description {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  margin: 0;
+  font-style: italic;
+  font-size: 12px;
+}
+
+.result-route__price {
+  grid-column-start: 5;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+  justify-self: end;
+  margin: 0;
+  font-weight: 700;
+}
+
+.result-route__total {
+  font-weight: 700;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.result-route__total-time {
+  grid-column-start: 3;
+  grid-column-end: span 2;
+  justify-self: center;
+  margin: 5px 0;
+}
+
+.result-route__total-cost {
+  grid-column-start: 5;
+  grid-column-end: span 2;
+  justify-self: end;
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+.action-btn {
+  width: 100%;
+  border-radius: 3px;
+  border: 0;
+  background-color: forestgreen;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.action-btn:active {
+  background-color: darkgreen;
+}
